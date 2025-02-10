@@ -1,0 +1,250 @@
+/* HOME STYLE */
+
+
+body{ 
+    top : 0;
+    font-family: 'Montserrat';
+    text-align: center;
+    background-color: #f4e4be;
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* justify-content: center;    */
+    /* position: relative;  */
+    font-weight: 300;
+    color:  rgb(72, 41, 6);
+}
+
+:root{
+    --background: #f5d599 ;
+    --second-background: #d9b97c ; 
+}
+
+nav{
+    top:0 ;
+    background-color: rgb(233, 145, 31, 0.9);
+    height: 70px;
+    padding: 10px;  
+    width: 100% ;
+    position: fixed;
+    z-index: 100;
+   
+
+}
+
+
+nav .menu { 
+    float: right;
+    list-style-type: none;
+    margin-right: 70px;    
+} 
+
+
+.logo{ 
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    text-decoration: none;
+    color:  rgb(72, 41, 6);
+    font-size: 2em;
+    font-weight: bold ;
+    font-family: 'Rubik Scribble';
+    
+} 
+
+nav .menu li {    
+    float: left;
+    font-weight: bold;
+    margin-right: 60px;
+    line-height: 30px;
+
+}
+
+nav .menu li :hover{
+    color:  rgb(103, 59, 10);
+    font-size: 1.1em;
+}
+
+li a {
+    text-decoration: none;
+    margin: 5px; 
+    color: rgb(72, 41, 6);
+    font-size: 1em;
+}
+
+.Welcome{ 
+    background:rgba(57, 29, 8, 0.01);
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;    
+}
+
+.bg img{ 
+    width:100%;
+    z-index: 1;
+}
+
+.welcome_info { 
+    /* display: grid;
+    place-items: center; */
+    position: absolute;
+    font-family: 'Birthstone';
+    top: 200px;/* Used to move welcome info up */
+    z-index: 2;
+    /* left: 50%; */
+    /* width: 100%; */
+    /* margin: 0 25%;  */
+}
+
+.pg_content .title{ 
+    color:  rgb(72, 41, 6);
+    margin: 50px 0px;
+}
+
+.pg_content{ 
+    
+    margin: 0 100px;
+ 
+    
+}
+.fav_order_content{ 
+    margin: 60px 0px;
+    display: flex;
+    justify-content: center;
+}
+.msg_from_buyer{
+    width: 40vw;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.fav_order_content .img{ 
+    width: 600px;
+    height:500px;
+    margin-left: 100px; 
+    border-radius: 10px;
+}
+
+.other_picks_gallery{ 
+    display: flex;
+    justify-content: center;
+    gap: 3%; 
+}
+
+.other_picks_gallery img{ 
+    width: 350px;
+    height: 250px; 
+    border-radius: 10px ;
+}
+
+.other_picks_gallery div p{ 
+    justify-self:center;
+    font-size: 1.3em ;
+}
+
+.owners_note_content{ 
+    display: flex;
+    justify-content: center;  
+    
+}
+
+.msg_from_owner{ 
+    width: 600px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.owner_profile img{ 
+   margin-left: 100px ;
+   border-radius: 5%;
+   
+}
+
+footer{ 
+    display: flex;
+    gap: 200px;
+    background-color: #d9b97c;
+    color:  rgb(72, 41, 6); 
+    font-weight: 410;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+@media(max-width: 1250px){ 
+    .other_picks_gallery img{ 
+        width: 300px;
+        height: 200px; 
+        border-radius: 10px ;
+    }
+
+} 
+@media(max-width: 900px){ 
+    nav .menu li { 
+        margin: 2px;
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+
+    .logo{ 
+        font-size: 1.5em ;
+    }
+
+    .welcome_info span{ 
+        font-size: 50px;
+    }
+
+    .bg img{ 
+        height: 500px; 
+    }
+
+    .fav_order_content{ 
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .msg_from_buyer{
+        width: 95%;
+
+    }
+    .fav_order_content .img{ 
+        margin: 0px;
+        width: 500px;
+        height:400px;
+    }
+    .pg_content{ 
+        margin: 0 50px;
+        justify-content: center;
+    }
+
+    .other_picks_gallery{ 
+        flex-direction: column;
+    }
+
+    .owners_note_content{ 
+        flex-direction: column-reverse;
+        
+    }
+ 
+    .msg_from_owner{ 
+        width: 95%;
+    }
+
+    .owner_profile img{ 
+        margin-left: 0;
+        border-radius: 5%;
+        
+    }
+
+    footer{ 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
