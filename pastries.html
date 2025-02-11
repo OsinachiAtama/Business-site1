@@ -21,7 +21,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            width: 550px;
+            width: 100%;
         }
          section h1{ 
             font-weight: 300;
@@ -72,6 +72,16 @@
             
         }
 
+        @media(max-width: 600px) {
+            img{ 
+                width: 250px; 
+                height: 200px;
+                border: 2px solid  #f4e4be; 
+                border-radius: 10px;
+            }
+            
+        }
+
     </style>
 </head>
 <body>
@@ -81,10 +91,17 @@
             <div>
                 <ul class="menu">           
                     
-                        <li class="menu_item"><a href="index.html">Home</a></li>
-                        <li class="menu_item"><a href="#">Pastries</a></li>
-                        <li class="menu_item"><a href="Customer_voices.html">Customer Voices</a></li>
-                        <li class="menu_item"><a href="Contact.html">Contact Us</a></li>               
+                    <li class="menu_item"><a href="index.html">Home</a></li>
+                    <li class="menu_icon"><a href="index.html"><i class='bx bxs-home'></i></a></li>
+
+                    <li class="menu_item"><a href="#">Pastries</a></li>
+                    <li class="menu_icon"><a href="#"><i class='bx bxs-cookie'></i></i></i></a></li>
+
+                    <li class="menu_item"><a href="Customer_voices.html">Customer Voices</a></li>
+                    <li class="menu_icon"><a href="Customer_voices.html"><i class='bx bxs-user-voice'></i></i></a></li>
+                    
+                    <li class="menu_item"><a href="Contact">Contact Us</a></li>   
+                    <li class="menu_icon"><a href="Contact.html"><i class='bx bxs-message'></i></i></i></a></li>             
                 </ul>
             </div>          
             
@@ -208,7 +225,7 @@
         </div>
         <div class="contact">
             <h4>Address and Phone Contact </h4>
-            Contact - +254 893 9012 <br>
+            Contact - +254 890 9000 <br>
             HQ Address – 123 Murtala Street,<br> 
 	        Nsukka, Enugu state, Nigeria. <br>
         </div>
